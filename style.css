@@ -1,0 +1,149 @@
+:root{
+    --clr-primary-100:hsl(0, 0%, 100%);
+    --clr-primary-200:hsl(0, 0%, 50%);
+
+    --clr-secondary-200: hsl(47, 88%, 63%);
+    --clr-secondary-400:hsl(0, 0%, 7%);
+
+    --ff-accent: 'Figtree', sans-serif;
+
+    --fw-regular: 600;
+    --fw-bold: 800;
+
+}
+
+*, *::before, *::after{
+    box-sizing: border-box
+}
+
+*{
+    margin: 0;
+}
+
+body {
+    line-height: 1.7;
+    -webkit-font-smoothing: antialiased;
+}
+
+img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+}
+
+input, button, textarea, select {
+    font: inherit;
+}
+
+p, h1, h2, h3, h4, h5, h6{
+    overflow-wrap: break-word;
+}
+
+h1, h2, h3{
+    line-height: 1;
+}
+
+
+/* general styles */
+body{
+    /* min-width: 375px; */
+    font-family: var(--ff-accent);
+    margin: 1rem;
+    background-color: var(--clr-secondary-200);
+    
+    align-items: center;
+}
+
+/* typography */
+
+
+.blog{
+    max-width: 375px;
+    max-height: 500px;
+    border: 1px solid black;
+    border-radius: 15px;
+    box-shadow: 14px 14px;
+
+    padding: 1rem;
+    background-color: var(--clr-primary-100);
+    font-size: 14px;
+    margin: auto;  /* this is used to center the div*/
+    margin-top: 50px;
+
+}
+
+.blog_img{
+    width: 100%;
+    margin-bottom: 25px;
+}
+
+.blog_head{
+    border: 1px solid  var(--clr-secondary-200);
+    border-radius: 5px;
+    background-color: var(--clr-secondary-200);
+    padding: 5px;
+    font-weight: var(--fw-bold);
+}
+
+.blog_head2{
+    font-weight: var(--fw-regular);
+}
+
+.blog_hea h1{
+    font-size: 1.5rem;
+}
+
+.blog_headhea1 p{
+    color: var(--clr-primary-200);
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+a{
+    text-decoration: none;
+    color: var(--clr-secondary-400);
+    font-weight: var(--fw-bold);
+}
+
+a:hover{
+    color: var(--clr-secondary-200);
+}
+
+
+.blog_footer{
+    display: flex;
+    gap: 10px;
+
+    
+}
+
+.blog_footer img{
+    width: 25px;
+}
+
+.blog_footer_p{
+    text-align: center;
+    font-weight: var(--fw-bold);
+    
+}
+
+/* utilities */
+div.blog_h{
+    margin-bottom:15px;
+}
+div.blog_he{
+    margin-bottom:15px;
+}
+div.blog_hea{
+    margin-bottom:15px;
+}
+div.blog_headhea1{
+    margin-bottom:15px;
+}
+div.blog_footer{
+    margin-top: 5px;
+}
+
+
+
+
+
